@@ -42,12 +42,7 @@ Follow these instructions to set up the machine learning component of the phishi
 ### Prerequisites
 
 Ensure you have the following installed:
--  [pip3_requirements.txt]([https://github.com/martinszuc/phishing-emails-detection-python/blob/main/main.ipynb](https://github.com/martinszuc/phishing-emails-detection-python/blob/main/pip3_requirements.txt))
-- Python 3.x
-- TensorFlow 2.x
-- Pandas
-- NumPy
-- scikit-learn
+- [pip3_requirements.txt](https://github.com/martinszuc/phishing-emails-detection-python/blob/main/pip3_requirements.txt)
 
 ### Usage
 Usage of the scripts is better described and understandable in the [Main Notebook](https://github.com/martinszuc/phishing-emails-detection-python/blob/main/main.ipynb).
