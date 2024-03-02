@@ -4,7 +4,7 @@ This repository hosts the machine learning component of a project aimed at detec
 
 ## Project Overview
 
-The core of this project lies in its ability to effectively identify phishing attempts within emails by analyzing a wide range of features. Utilizing advanced machine learning techniques, the project employs a series of feature finders that extract and scrutinize email characteristics, such as embedded URLs, HTML content, attachments, and more. These features are then fed into a TensorFlow-based model, which is trained to discern between phishing and legitimate emails. The ultimate goal is to integrate this model into an Android application, leveraging federated learning to improve model accuracy while maintaining user privacy.
+This project identifies phishing attempts. Utilizing machine learning techniques, the project uses a series of feature finders that extract features, such as embedded URLs, HTML content, attachments, and more. These features are then fed into a TensorFlow-based model, which is trained to classify phishing and legitimate emails. The ultimate goal is to integrate this model into an Android application, leveraging federated learning to improve model accuracy while maintaining user privacy.
 
 ### Main Features
 
