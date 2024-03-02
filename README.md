@@ -49,17 +49,11 @@ Ensure you have the following installed:
 - scikit-learn
 
 ### Usage
-
-#### Data Preparation
-
-#### Model Training
-
-#### Prediction
-
+Usage of the scripts is better described and understandable in the [Main Notebook](https://github.com/martinszuc/phishing-emails-detection-python/blob/main/main.ipynb).
 
 ## Authors
 
-- **Martin Szucs** - [martinszuc](https://github.com/martinszuc)
+-  [martinszuc](https://github.com/martinszuc)
 
 ## Acknowledgments and References
 
