@@ -59,8 +59,8 @@ This project builds upon and extends the work found at [MachineLearningPhishing]
 
 The data used for training the phishing detection model were sourced from two main repositories, which provided a rich dataset of phishing emails:
 
-- [Phishing Pot Dataset](https://github.com/rf-peixoto/phishing_pot) by rf-peixoto
-- [Phishing Dataset](https://monkey.org/~jose/phishing/) by jose at monkey.org
+- [Phishing Pot Dataset](https://github.com/rf-peixoto/phishing_pot) by rf-peixoto (converted .eml to mbox using scripts in this repo)
+- [Phishing Dataset](https://monkey.org/~jose/phishing/) by jose at monkey.org (downloaded mbox files)
 
 ## License
 
