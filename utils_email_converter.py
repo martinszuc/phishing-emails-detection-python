@@ -15,7 +15,7 @@ def clear_directory(directory):
 
 def eml_to_mbox(input_directory, output_mbox_file):
     """Converts all .eml files in a directory to a single .mbox file."""
-    mbox = mailbox.mbox(output_mbox_file, create=True)
+    mbox = mailbox.mbox(output_mbox_file, create=True)  # Use the provided output mbox file path
     eml_files = [f for f in os.listdir(input_directory) if f.endswith(".eml")]
     total_files = len(eml_files)
     
