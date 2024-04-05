@@ -69,5 +69,5 @@ def prepare_data_for_retraining(resources_dir, safe_filename, phishing_filename,
     """Load, preprocess, and prepare data for retraining the model without splitting."""
     combined_df = load_datasets(resources_dir, safe_filename, phishing_filename)
     preprocessed_df = preprocess_features(combined_df)
-    train_ds = df_to_dataset(preprocessed_df, shuffle=True, batch_size=batch_size) 
+    train_ds = df_to_dataset(preprocessed_df, shuffle=True, batch_size=batch_size)
     return train_ds
