@@ -5,13 +5,21 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 
 def load_datasets(resources_dir, safe_filename, phishing_filename):
-    """Load datasets from specified paths and combine them."""
+    """Load datasets from specified paths, ensure equal size, and combine them."""
     safe_path = os.path.join(resources_dir, safe_filename)
     phishing_path = os.path.join(resources_dir, phishing_filename)
-    
+
     safe_df = pd.read_csv(safe_path, index_col=0)
     phishing_df = pd.read_csv(phishing_path, index_col=0)
-    
+
+    # Determine the minimum size between both datasets
+    min_size = min(len(safe_df), len(phishing_df))
+
+    # Truncate both datasets to the minimum size
+    safe_df = safe_df.sample(n=min_size, random_state=42).reset_index(drop=True)
+    phishing_df = phishing_df.sample(n=min_size, random_state=42).reset_index(drop=True)
+
+    # Combine the datasets
     combined_df = pd.concat([safe_df, phishing_df], ignore_index=True)
     return combined_df
 
